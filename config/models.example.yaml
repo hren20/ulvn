@@ -1,0 +1,22 @@
+# Copy this file to config/models.yaml and edit checkpoint paths after
+# downloading the released local-planner weights.
+#
+# config_path is resolved relative to this file. ckpt_path may be relative or
+# absolute.
+
+nomad_ulvn:
+  config_path: model_configs/nomad_ulvn.yaml
+  ckpt_path: ../checkpoints/local_planner/nomad_ulvn.pth
+
+vint_ulvn:
+  config_path: model_configs/vint_ulvn.yaml
+  ckpt_path: ../checkpoints/local_planner/vint_ulvn.pth
+
+# Backward-compatible short aliases used by examples and launch docs.
+nomad:
+  config_path: model_configs/nomad_ulvn.yaml
+  ckpt_path: ../checkpoints/local_planner/nomad_ulvn.pth
+
+vint:
+  config_path: model_configs/vint_ulvn.yaml
+  ckpt_path: ../checkpoints/local_planner/vint_ulvn.pth

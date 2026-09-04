@@ -1,0 +1,14 @@
+numpy
+pillow
+tqdm
+opencv-python
+faiss-cpu
+scikit-learn
+matplotlib
+seaborn
+networkx
+kornia
+packaging
+pyyaml
+torch
+torchvision

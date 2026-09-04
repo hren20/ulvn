@@ -1,0 +1,28 @@
+model_type: vint
+obs_encoder: efficientnet-b0
+obs_encoding_size: 512
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+late_fusion: false
+
+normalize: true
+
+context_type: temporal
+context_size: 5
+alpha: 0.5
+
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 0
+  max_dist_cat: 10
+close_far_threshold: 10
+
+len_traj_pred: 5
+learn_angle: true
+image_size: [85, 64]
+goal_type: image
+frame_rate: 4
+

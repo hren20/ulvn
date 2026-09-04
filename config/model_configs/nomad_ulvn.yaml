@@ -1,0 +1,33 @@
+model_type: nomad
+vision_encoder: nomad_vint
+encoding_size: 256
+obs_encoder: efficientnet-b0
+attn_unet: false
+cond_predict_scale: false
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+down_dims: [64, 128, 256]
+
+num_diffusion_iters: 10
+scheduler_type: ddpm
+num_inference_steps: 10
+normalize: true
+
+context_type: temporal
+context_size: 3
+alpha: 1.0e-4
+
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 3
+  max_dist_cat: 20
+
+len_traj_pred: 8
+learn_angle: false
+image_size: [96, 96]
+goal_type: image
+frame_rate: 4
+

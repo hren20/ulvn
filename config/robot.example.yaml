@@ -1,0 +1,13 @@
+# Linear and angular speed limits.
+max_v: 0.3       # m/s
+max_w: 0.4       # rad/s
+
+# Observation and graph update rates.
+frame_rate: 4    # Hz
+graph_rate: 0.3333
+
+# ROS velocity topics. local_planner.py currently reads max_v, max_w, and
+# frame_rate directly; controller/teleop integrations may use these topics.
+vel_teleop_topic: /cmd_vel_mux/input/teleop
+vel_navi_topic: /cmd_vel
+vel_recovery_topic: /cmd_vel_mux/input/recovery

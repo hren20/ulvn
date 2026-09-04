@@ -1,0 +1,12 @@
+numpy
+pillow
+matplotlib
+pyyaml
+scipy
+opencv-python
+torch
+torchvision
+efficientnet-pytorch
+diffusers
+einops
+warmup-scheduler

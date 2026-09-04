@@ -1,0 +1,12 @@
+# cmd_vel_mux robot config example.
+# Use this when the simulator or robot receives velocity commands through
+# cmd_vel_mux instead of a direct /cmd_vel topic.
+
+max_v: 1.0       # m/s
+max_w: 0.5       # rad/s
+frame_rate: 30   # Hz
+graph_rate: 0.3333
+
+vel_teleop_topic: /cmd_vel_mux/input/navi
+vel_navi_topic: /cmd_vel_mux/input/navi
+vel_recovery_topic: /cmd_vel_mux/input/recovery

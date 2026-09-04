@@ -1,0 +1,26 @@
+name: ulvn
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pytorch
+  - torchvision
+  - pillow
+  - tqdm
+  - opencv
+  - faiss-cpu
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - networkx
+  - kornia
+  - packaging
+  - pyyaml
+  - pip:
+      # Install ROS Python packages through your ROS distribution, not pip.
+      # Add local planner packages such as inference_utils here once released.

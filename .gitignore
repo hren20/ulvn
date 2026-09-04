@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime outputs
+tmp/
+results/
+outputs/
+logs/
+*.log
+
+# Large generated data and model artifacts
+*.npy
+*.npz
+*.faiss
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.usd
+*.usda
+*.usdc
+*.usdz
+*.ply
+*.pcd
+*.zip
+*.z01
+*.z02
+
+# Local datasets and ROS bags
+data/
+continuous_images/
+topomaps/
+assets/
+checkpoints/
+*.bag
+
+# Local configuration copied from examples
+config/models.yaml
+config/robot.yaml
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

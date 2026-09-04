@@ -1,0 +1,9 @@
+numpy
+opencv-python
+pillow
+matplotlib
+scipy
+scikit-image
+networkx
+pqdict
+rospkg

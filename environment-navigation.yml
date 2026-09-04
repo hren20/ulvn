@@ -1,0 +1,28 @@
+name: ulvn_nav
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - matplotlib
+  - pyyaml
+  - rospkg
+  - scipy
+  - pillow
+  - opencv
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.8
+  - pip:
+      - efficientnet_pytorch
+      - diffusers
+      - einops
+      - warmup_scheduler
+
+# ROS itself is not installed by this conda environment. Install the ROS
+# distribution and message packages for your system separately, then activate
+# this environment in the same shell where ROS is sourced.
